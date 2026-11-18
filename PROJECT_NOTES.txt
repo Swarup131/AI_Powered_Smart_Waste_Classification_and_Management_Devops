@@ -1,0 +1,14 @@
+DEMO STATUS
+- Runnable Streamlit demo using general pretrained YOLO segmentation.
+- CPU inference; first run downloads yolo11n-seg.pt (a copy is bundled in this repo).
+- Not a custom-trained 5-class waste model.
+- Waste category suggestions are editable by the presenter.
+- Area percentage is visible pixel area, not weight.
+
+CODE LAYOUT
+- app.py          Streamlit UI (tabs: Analyse / History / About)
+- waste_utils.py  Pure logic: detection parsing, area maths, overlay, reports (unit tested)
+- theme.py        CSS and small HTML builders for the UI
+- tests/          Unit tests (run: python -m pytest -q tests)
+
+Maintained by Swarup.
